@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class HomeScreen extends StatelessWidget {
   static const String routeName = '/';
@@ -17,12 +18,9 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(title: Text('Home')),
         body: Center(
-          child: ElevatedButton(
-            child: Text('Vouchar Screen'),
-            onPressed: () {
-              Navigator.pushNamed(context, '/Vouchar');
-            },
-          ),
-        ));
+            child: SvgPicture.asset(
+          'assets/logo.svg',
+          height: 100,
+        )));
   }
 }
