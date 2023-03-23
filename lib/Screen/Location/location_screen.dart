@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:google_maps_flutter_web/google_maps_flutter_web.dart';
 
 class LocationScreen extends StatelessWidget {
   static const String routeName = '/Location';
@@ -27,7 +28,7 @@ class LocationScreen extends StatelessWidget {
                 initialCameraPosition:
                     CameraPosition(target: LatLng(10, 10), zoom: 10),
               )),
-          Positioned(
+          /*Positioned(
             top: 40,
             left: 20,
             right: 20,
@@ -60,14 +61,14 @@ class LocationScreen extends StatelessWidget {
                 onPressed: () {},
               ),
             ),
-          ),
+          ),*/
         ],
       ),
     );
   }
 }
 
-class LocationSearchBox extends StatelessWidget {
+/*class LocationSearchBox extends StatelessWidget {
   const LocationSearchBox({
     super.key,
   });
@@ -91,4 +92,4 @@ class LocationSearchBox extends StatelessWidget {
       ),
     );
   }
-}
+}*/
